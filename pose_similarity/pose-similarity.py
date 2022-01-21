@@ -336,10 +336,6 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, mod
                 min_score_class = "forward"
                 x = 0
                 y = 1
-                #if min_score == score_forward and min_score > 0.2:
-                #    min_score_class = "center"
-                #    x = 0
-                #    y = 0
             elif min_score == score_forward_left or min_score == score_forward_left2:
                 min_score_class = "forward_left"
                 x = -1
