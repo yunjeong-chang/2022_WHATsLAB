@@ -38,7 +38,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as 
             cv2.putText(image, 'STARTING COLLECTION {}'.format(flag), (50,50), cv2.FONT_HERSHEY_SIMPLEX, 1, (255,0,0), 2, cv2.LINE_4)
             cv2.imshow('mediapipe pose', image)
         elif flag == 300 :                
-            cv2.imwrite(os.path.join('pose-dataset-0121', '{}.jpg'.format(uuid.uuid1())), image)
+            cv2.imwrite(os.path.join('pose-dataset', '{}.jpg'.format(uuid.uuid1())), image)
             cv2.imshow('mediapipe pose', image)
             break
 
