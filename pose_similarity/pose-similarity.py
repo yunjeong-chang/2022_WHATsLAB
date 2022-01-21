@@ -363,15 +363,7 @@ with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5, mod
         
         mp_drawing.draw_landmarks(frame, results.pose_landmarks, mp_pose.POSE_CONNECTIONS)
         cv.imshow("Pose Similarity",frame)
-        
-        # resize & rotate for tutorial
-        board_frame = cv.resize(frame, dsize=(1280, 720))
-        board_frame = cv.rotate(frame, cv.ROTATE_90_CLOCKWISE)
-        cv.imshow("board_frame",board_frame)
-        # print(np.shape(board_frame))
-        
-        
-        # for rotate
+
         if (cv.waitKey(10) & 0xFF == ord('q')) or (cv.waitKey(10) & 0xFF == 27):
             break
 
