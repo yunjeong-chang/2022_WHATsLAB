@@ -1,1 +1,3 @@
-# 2022_WHATsLAB_PoseEstimation
+## 2021~2022 WHATsLAB 경기과학진흥원 AI 실증사업 
+
+- 개발 과정에서 중요한 코드 모아 두는 곳..
